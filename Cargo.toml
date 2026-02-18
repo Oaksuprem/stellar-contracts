@@ -33,7 +33,7 @@ members = [
     "packages/test-utils/*",
     "packages/tokens",
 ]
-exclude = ["examples/upgradeable/testdata"]
+exclude = ["examples/upgradeable/testdata", "projects"]
 
 [workspace.package]
 authors = ["OpenZeppelin"]

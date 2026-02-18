@@ -1,0 +1,30 @@
+[workspace]
+resolver = "2"
+members = [
+    "contracts/payment-processor",
+    "contracts/escrow-manager",
+    "contracts/dispute-resolver",
+    "contracts/loyalty-program",
+    "contracts/payment-orchestrator",
+]
+
+[workspace.package]
+authors = ["OpenZeppelin", "Paywow Team"]
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/OpenZeppelin/stellar-contracts"
+documentation = "https://docs.openzeppelin.com/stellar-contracts/"
+keywords = ["stellar", "soroban", "smart-contracts", "payment", "paywow"]
+categories = ["no-std", "wasm"]
+version = "0.1.0"
+
+[workspace.dependencies]
+soroban-sdk = "25.0.2"
+proc-macro2 = "1.0"
+stellar-tokens = { path = "../../packages/tokens", version = "=0.6.0" }
+stellar-access = { path = "../../packages/access", version = "=0.6.0" }
+stellar-contract-utils = { path = "../../packages/contract-utils", version = "=0.6.0" }
+stellar-macros = { path = "../../packages/macros", version = "=0.6.0" }
+stellar-accounts = { path = "../../packages/accounts", version = "=0.6.0" }
+stellar-fee-abstraction = { path = "../../packages/fee-abstraction", version = "=0.6.0" }
+stellar-governance = { path = "../../packages/governance", version = "=0.6.0" }
